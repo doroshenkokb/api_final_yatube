@@ -49,7 +49,7 @@
 5. Установить зависимости:
 
    ```python
-   python3 -m pip install --upgrade pip
+   python -m pip install --upgrade pip
    pip install -r requirements.txt
    ```
 
@@ -57,8 +57,8 @@
 
    ```python
    cd yatube
-   python3 manage.py makemigrations
-   python3 manage.py migrate
+   python manage.py makemigrations
+   python manage.py migrate
    ```
 
 7. Запустить проект:
@@ -91,8 +91,8 @@
    ```json
    {
      "id": 2,
-     "author": "Dmitrii",
-     "text": "Мой первый пост.",
+     "author": "Kirill",
+     "text": "My first post.",
      "pub_date": "2022-04-22T12:00:22.021094Z",
      "image": null,
      "group": null
@@ -117,9 +117,9 @@
    ```json
    {
      "id": 1,
-     "author": "Dmitrii",
-     "text": "Тест",
-     "created": "2022-04-22T12:06:13.146875Z",
+     "author": "Kirill",
+     "text": "My first post.",
+     "created": "2023-01-22T12:06:13.146875Z",
      "post": 1
    }
    ```
