@@ -82,7 +82,7 @@
 
    ```json
    {
-     "text": "Мой первый пост."
+     "text": "My first post."
    }
    ```
 
@@ -108,7 +108,7 @@
    ```json
    {
      "post": 1,
-     "text": "Тест"
+     "text": "My first post."
    }
    ```
 
