@@ -22,7 +22,7 @@
 1. Клонировать репозиторий:
 
    ```python
-   git clone https://github.com/egorcoders/api_final_yatube.git
+   git clone https://github.com/TroutBBBoy/api_final_yatube.git
    ```
 
 2. Перейти в папку с проектом:
