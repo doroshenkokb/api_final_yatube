@@ -134,4 +134,8 @@ http://127.0.0.1:8000/redoc/
 ```python
 # ПО для тестирования API, Postman
 https://www.postman.com/
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 78959454317ef9c4eb31712c548f9df0b276b50c
