@@ -5,7 +5,7 @@ User = get_user_model()
 
 
 class Group(models.Model):
-    '''Модель создания групп постов.'''
+    """Модель создания групп постов."""
     title = models.CharField(
         max_length=200,
     )
@@ -41,6 +41,7 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
+    """Модель создания комментария."""
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='comments')
     post = models.ForeignKey(
@@ -54,7 +55,7 @@ class Comment(models.Model):
 
 
 class Follow(models.Model):
-    '''Модель создания подписок пользователей.'''
+    """Модель создания подписок пользователей."""
     user = models.ForeignKey(
         User,
         related_name='follower',

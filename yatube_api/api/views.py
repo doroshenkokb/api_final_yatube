@@ -6,6 +6,7 @@ from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
 from rest_framework.permissions import IsAuthenticated
 
+from .mixins import CreateListRetrieveViewSet
 from .permissions import IsAuthorOrReadOnly
 from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
                           PostSerializer)
@@ -21,7 +22,7 @@ class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (IsAuthorOrReadOnly,)
 
     def perform_create(self, serializer):
-        '''Метод создания нового поста.'''
+        """Метод создания нового поста."""
         return serializer.save(author=self.request.user)
 
 
@@ -47,8 +48,8 @@ class CommentViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user, post=post)
 
 
-class FollowViewSet(viewsets.ModelViewSet):
-    '''Вьюсет для обработки подписок.'''
+class FollowViewSet(CreateListRetrieveViewSet):
+    """Вьюсет для обработки подписок."""
     serializer_class = FollowSerializer
     filter_backends = (SearchFilter,)
     search_fields = ('user__username', 'following__username')
