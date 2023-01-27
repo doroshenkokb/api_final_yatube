@@ -8,7 +8,9 @@ from rest_framework.permissions import IsAuthenticated
 from posts.models import Group, Post
 from .mixins import CreateListRetrieveViewSet
 from .permissions import IsAuthorOrReadOnly
-from .serializers import (CommentSerializer, FollowSerializer, GroupSerializer,
+from .serializers import (CommentSerializer, 
+                          FollowSerializer, 
+                          GroupSerializer,
                           PostSerializer)
 
 
