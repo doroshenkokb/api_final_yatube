@@ -22,7 +22,7 @@
 1. Клонировать репозиторий:
 
    ```python
-   git clone https://github.com/TroutBBBoy/api_final_yatube.git
+   git clone https://github.com//doroshenkokb/api_final_yatube.git
    ```
 
 2. Перейти в папку с проектом:
@@ -93,7 +93,7 @@
      "id": 2,
      "author": "Kirill",
      "text": "My first post.",
-     "pub_date": "2022-04-22T12:00:22.021094Z",
+     "pub_date": "2022-12-22T12:00:22.021094Z",
      "image": null,
      "group": null
    }
@@ -119,7 +119,7 @@
      "id": 1,
      "author": "Kirill",
      "text": "My first post.",
-     "created": "2023-01-22T12:06:13.146875Z",
+     "created": "2023-12-22T12:06:13.146875Z",
      "post": 1
    }
    ```
